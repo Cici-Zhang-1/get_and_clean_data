@@ -60,9 +60,9 @@ secondSubjectMerge <- subjectMerge %>%
 setwd(rootFolder)
 
 ## write merge data to merge_data.txt
-write.table(subjectMerge, 'merge_data.txt')
+write.table(subjectMerge, 'merge_data.txt', row.names = FALSE)
 
 ## write tidy data to tidy file
-write.table(secondSubjectMerge, 'tidy.txt')
+write.table(secondSubjectMerge, 'tidy.txt', row.names = FALSE)
 
 
